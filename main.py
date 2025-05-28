@@ -7,8 +7,8 @@ window.configure(bg="#333333")
 
 def login ():
     username = "modther"
-    password = "12345"
-    if username_entry.get() == username and password_entry == password:
+    password = 12345
+    if username_entry.get() == username and password_entry.get() == password:
         print("Successfully logged in")
     else:
         print("Invalid login")
