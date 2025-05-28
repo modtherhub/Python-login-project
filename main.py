@@ -5,6 +5,14 @@ window.title("Login Form")
 window.geometry('340x340')
 window.configure(bg="#333333")
 
+def login ():
+    username = "modther"
+    password = "12345"
+    if username_entry.get() == username and password_entry == password:
+        print("Successfully logged in")
+    else:
+        print("Invalid login")
+
 frame = tkinter.Frame(bg="#333333")
 
 login_label = tkinter.Label(frame, text="Login", bg="#333333", fg="#FFFFFF", font=("Arial", 30))
@@ -12,7 +20,7 @@ username_label = tkinter.Label(frame, text="Username", bg="#333333", fg="#FFFFFF
 username_entry = tkinter.Entry(frame, font=("Arial", 16))
 password_label = tkinter.Label(frame, text="Password", bg="#333333", fg="#FFFFFF", font=("Arial", 16))
 password_entry = tkinter.Entry(frame, show="*", font=("Arial", 16))
-login_button = tkinter.Button(frame, text="Login", bg="#817272", fg="#FFFFFF", font=("Arial", 16))
+login_button = tkinter.Button(frame, text="Login", bg="#817272", fg="#FFFFFF", font=("Arial", 16), command=login)
 
 
 login_label.grid(row=0, column=0, columnspan=2, sticky="news", pady = 40)
