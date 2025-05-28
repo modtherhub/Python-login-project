@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import messagebox 
 
 window = tkinter.Tk()
 window.title("Login Form")
@@ -7,11 +8,11 @@ window.configure(bg="#333333")
 
 def login ():
     username = "modther"
-    password = 12345
+    password = "12345"
     if username_entry.get() == username and password_entry.get() == password:
-        print("Successfully logged in")
+        messagebox.showinfo(title="Login Succes", message="You Succecfully login")
     else:
-        print("Invalid login")
+        messagebox.showinfo(title="Invaid Login", message="")
 
 frame = tkinter.Frame(bg="#333333")
 
